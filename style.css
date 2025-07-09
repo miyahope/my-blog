@@ -18,4 +18,13 @@ h1 {
     font-size: larger;
 }
 
+.window-images {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px;
+}
 
