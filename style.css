@@ -6,17 +6,34 @@
 }
 
 body {
-    color:indigo;
-    text-align: center;
+    color: #02365b;;
+    text-align: left;
     font-family: 'CustomFont', sans-serif;
-    background-color: #f0f0f0;
-    border: 2px dotted plum;
+    background-color: #d0eeee;
+    border: 6px double #a1dce2;
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
     font-size: 8vw;
+    padding: 20px;
+   
 }
+
+h2 {
+  padding: 20px;
+  font-size: 4vw;
+  border-left-style: solid;
+  border-left-width: 10px;
+}
+
+
+.header {
+  margin: auto;
+}
+
+
+
 
 .window-images {
   display: flex;
