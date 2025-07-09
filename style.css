@@ -1,8 +1,21 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('fonts/custom.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
     color:indigo;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'CustomFont', sans-serif;
     background-color: #f0f0f0;
     border: 2px dotted plum;
 }
+
+h1 {
+    text-align: left;
+    font-size: larger;
+}
+
 
