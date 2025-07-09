@@ -15,7 +15,7 @@ body {
 
 h1 {
     text-align: left;
-    font-size: larger;
+    font-size: 8vw;
 }
 
 .window-images {
@@ -28,3 +28,9 @@ h1 {
   padding: 20px;
 }
 
+.window-images img {
+  width: 285px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
