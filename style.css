@@ -7,7 +7,6 @@
 
 body {
     color: #02365b;;
-    text-align: left;
     font-family: 'CustomFont', sans-serif;
     background-color: #d0eeee;
     border: 6px double #a1dce2;
@@ -16,12 +15,9 @@ body {
 h1 {
     text-align: center;
     font-size: 8vw;
-    padding: 20px;
-   
 }
 
 h2 {
-  padding: 20px;
   font-size: 4vw;
   border-left-style: solid;
   border-left-width: 10px;
@@ -29,25 +25,99 @@ h2 {
 
 
 .header {
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-
-.window-images {
+.window-images  {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 auto;
   gap: 20px;
   padding: 20px;
 }
 
 .window-images img {
+  width: 285px;            /* move image sizing here */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.window-images a {
+  text-decoration: none;
+  color: 	#533c8c;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.jiji-window{
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  margin: 20px;            
+  text-align: center;
+}
+
+.jiji-window img {
   width: 285px;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
+}
+
+.arrietty-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  margin: 20px;            
+  text-align: center;
+}
+
+.arrietty-window img {
+  width: 285px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.howls-moving-castle-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  margin: 20px;            
+  text-align: center;
+}
+
+.howls-moving-castle-window img {
+  width: 285px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.from-up-on-poppy-hill-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  margin: 20px;            
+  text-align: center;
+} 
+
+.from-up-on-poppy-hill-window img {
+  width: 285px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  text-align: center;
 }
