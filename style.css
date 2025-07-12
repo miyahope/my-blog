@@ -6,31 +6,36 @@
 }
 
 body {
-    color: #02365b;;
+    color: #a76ea3;;
     font-family: 'CustomFont', sans-serif;
-    background-color: #d0eeee;
-    border: 6px double #a1dce2;
+    background-color: #ebdeef;
+    border: 6px double #d1add1;
+    margin: 0;
+    padding: 0;
+    border: fill;
 }
+
+.header {
+  padding: 10px;
+  height: 300px; 
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
 
 h1 {
     text-align: center;
     font-size: 8vw;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 1;
+    margin-bottom: 0.5px;
+    padding: 5px;
 }
 
-h2 {
-  font-size: 4vw;
-  border-left-style: solid;
-  border-left-width: 10px;
-}
-
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .window-images  {
   display: flex;
@@ -42,7 +47,6 @@ h2 {
 .window-images img {
   width: 285px;           
   height: auto;
-  border-radius: 8px;
   object-fit: cover;
 }
 
@@ -51,7 +55,6 @@ h2 {
   color: 	#533c8c;
   font-weight: bold;
   font-size: 2em;
-  gap: 20px;
 }
 
 .jiji-window{
