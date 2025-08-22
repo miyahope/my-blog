@@ -12,7 +12,12 @@ body {
     border: 6px double #d1add1;
     margin: 0;
     padding: 0;
-    border: fill;
+    
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -24,14 +29,13 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  display: block;
 }
 
 
 h1 {
     text-align: center;
     font-size: 8vw;
-    margin-top: 1;
+    margin-top: 1px;
     margin-bottom: 0.5px;
     padding: 5px;
 }
@@ -45,14 +49,15 @@ h1 {
 }
 
 .window-images img {
-  width: 285px;           
-  height: auto;
+  width: 285px;     /* fixed size */
+  height: 180px;    /* optional: keeps oval look */
   object-fit: cover;
+  display: block;
 }
 
 .window-images a {
   text-decoration: none;
-  color: 	#533c8c;
+  color:  #533c8c;
   font-weight: bold;
   font-size: 2em;
 }
@@ -65,12 +70,7 @@ h1 {
   text-align: center;
 }
 
-.jiji-window img {
-  width: 285px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
+
 
 .arrietty-window {
   display: flex;
@@ -80,12 +80,7 @@ h1 {
   text-align: center;
 }
 
-.arrietty-window img {
-  width: 285px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
+
 
 .howls-moving-castle-window {
   display: flex;
@@ -95,12 +90,6 @@ h1 {
   text-align: center;
 }
 
-.howls-moving-castle-window img {
-  width: 285px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
 
 .from-up-on-poppy-hill-window {
   display: flex;
@@ -110,11 +99,11 @@ h1 {
   text-align: center;
 } 
 
-.from-up-on-poppy-hill-window img {
-  width: 285px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+
+
+
+hr {
+ color:#533c8c;
 }
 
 .footer {
