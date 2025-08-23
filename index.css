@@ -48,7 +48,6 @@ h1 {
   grid-template-columns: repeat(4, minmax(0, 1fr));  /* 4 columns */
   gap: 15px;
   padding: 0 20px;
-  margin: 20px auto;
   max-width: 1400px;                
 }
 
@@ -82,7 +81,13 @@ h1 {
 
 
 /* FOOTER */
+
+  hr {
+  display: block;
+  border: solid #DCB6D6;
+
+}
 .footer { 
   text-align: center; 
-  font-size: 1.4em; 
+  font-size: 10px; 
 }
