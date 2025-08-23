@@ -9,10 +9,11 @@ body {
   color: #a76ea3;
   font-family: 'CustomFont', sans-serif;
   background-color: #ebdeef;
-  border: 6px double #d1add1;
+  border: 5px double #d1add1;
   margin: 0;
   padding: 0;
 }
+
 
 img { 
   max-width: 100%; 
@@ -21,63 +22,66 @@ img {
 
 /* HEADER */
 .header { 
+
   padding: 10px; 
-  height: 300px; 
 }
 
 .header img { 
   width: 100%;
-  height: 100%;
+  height: 100px;
+  border-radius: 85%;
   object-fit: cover;
   display: block;
 }
 
 h1 {
   text-align: center;
-  font-size: 8vw;
+  font-size: 2em;
   margin-top: 1px;
   margin-bottom: 0.5px;
   padding: 5px;
 }
 
+/* CONTAINER: 4 equal columns, consistent gaps */
 .window-images {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 32px;
-  padding: 0 16px;
-  margin: 20px 0;
+  display: grid;                      /* use grid only */
+  grid-template-columns: repeat(4, minmax(0, 1fr));  /* 4 columns */
+  gap: 15px;
+  padding: 0 20px;
+  margin: 20px auto;
+  max-width: 1400px;                
 }
 
+/* ITEM: stack image over link */
 .window {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;             /* image on top, link below */
   align-items: center;
   text-align: center;
-  max-width: 220px;
-  width: 220px;
-  margin: 10px;
 }
 
+/* IMAGES: uniform sizing, never ‘boxy’ or stretched */
 .window img {
-  width: 100%;
-  object-fit: cover;
+  width: 100%;                                   
+  height: auto;                      
+  object-fit: cover;                  
   border-radius: 8px;
   display: block;
-  margin-bottom: 15px;
 }
 
-.window a { 
-  text-decoration: none; 
-  color: #533c8c; 
-  font-weight: bold; 
-  font-size: 1.8em; 
-  margin: 5px 0; 
-  display: block; 
+/* LINKS */
+.window a {
+  text-decoration: none;
+  color: #533c8c;
+  font-weight: bold;
+  font-size: 15px;                 
+  margin-top: 8px;
+  display: block;
 }
-/* Footer */
+
+
+
+/* FOOTER */
 .footer { 
   text-align: center; 
   font-size: 1.4em; 

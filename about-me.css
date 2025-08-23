@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('fonts/custom.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    color: #a76ea3;;
+    font-family: 'CustomFont', sans-serif;
+    background-color: #ebdeef;
+    margin: 0;
+    padding: 0;
+    border: fill;
+}
+
+.topnav {
+    background-color: #EDCDE6;
+    overflow: hidden;
+    border: 6px double #d1add1;
+}
+
+.topnav a {
+    float: left;
+    color:#a76ea3;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color:cadetblue;
+    color:antiquewhite;
+}
+
+.topnav a:active {
+    background-color: burlywood;
+    color: white;
+}
