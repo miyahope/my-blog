@@ -6,107 +6,79 @@
 }
 
 body {
-    color: #a76ea3;;
-    font-family: 'CustomFont', sans-serif;
-    background-color: #ebdeef;
-    border: 6px double #d1add1;
-    margin: 0;
-    padding: 0;
-    
+  color: #a76ea3;
+  font-family: 'CustomFont', sans-serif;
+  background-color: #ebdeef;
+  border: 6px double #d1add1;
+  margin: 0;
+  padding: 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+img { 
+  max-width: 100%; 
+  height: auto; 
 }
 
-.header {
-  padding: 10px;
+/* HEADER */
+.header { 
+  padding: 10px; 
   height: 300px; 
 }
 
-.header img {
+.header img { 
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-}
-
-
-h1 {
-    text-align: center;
-    font-size: 8vw;
-    margin-top: 1px;
-    margin-bottom: 0.5px;
-    padding: 5px;
-}
-
-
-.window-images  {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.window-images img {
-  width: 285px;     /* fixed size */
-  height: 180px;    /* optional: keeps oval look */
   object-fit: cover;
   display: block;
 }
 
-.window-images a {
-  text-decoration: none;
-  color:  #533c8c;
-  font-weight: bold;
-  font-size: 2em;
+h1 {
+  text-align: center;
+  font-size: 8vw;
+  margin-top: 1px;
+  margin-bottom: 0.5px;
+  padding: 5px;
 }
 
-.jiji-window{
+.window-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 0 16px;
+  margin: 20px 0;
+}
+
+.window {
   display: flex;
   flex-direction: column;
-  align-items: center;     
-  margin: 20px;            
+  align-items: center;
   text-align: center;
+  max-width: 220px;
+  width: 220px;
+  margin: 10px;
 }
 
-
-
-.arrietty-window {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     
-  margin: 20px;            
-  text-align: center;
+.window img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
 }
 
-
-
-.howls-moving-castle-window {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     
-  margin: 20px;            
-  text-align: center;
+.window a { 
+  text-decoration: none; 
+  color: #533c8c; 
+  font-weight: bold; 
+  font-size: 1.8em; 
+  margin: 5px 0; 
+  display: block; 
 }
-
-
-.from-up-on-poppy-hill-window {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     
-  margin: 20px;            
-  text-align: center;
-} 
-
-
-
-
-hr {
- color:#533c8c;
-}
-
-.footer {
-  text-align: center;
-  font-size: 1.4em;
+/* Footer */
+.footer { 
+  text-align: center; 
+  font-size: 1.4em; 
 }
