@@ -6,35 +6,35 @@
 }
 
 body {
-    color: #a76ea3;
-    font-family: 'CustomFont', sans-serif;
-    background-color: #ebdeef;
-    margin: 0;
-    padding: 0;
-    border: fill;
+  color: #a76ea3;
+  font-family: 'CustomFont', sans-serif;    
+  background-color: #ebdeef; 
+  margin: 0;
+  padding: 0;
+  border: fill;
+  height: 100%;
+  overflow: hidden; 
+  position: relative;
 }
 
 .topnav {
-    color: #a76ea3;
-    background-color: #EDCDE6;
-    overflow: hidden;
-    border: 6px double #d1add1;
-    max-width: auto;
-    margin-left: 0px;
-    min-width: 400px;
+  color: #a76ea3;
+  background-color: #EDCDE6;
+  width: auto;
 }
 
 .topnav a {
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 12px;
-    text-decoration: none;
+  float: left;
+  text-align: center;
+  border: 6px double #d1add1;
+  padding: 14px 16px;
+  font-size: 12px;
+  text-decoration: none;
 }
 
 .topnav a:hover {
-    background-color:#74498c;
-    color: white;
+  background-color:#74498c;
+  color: white;
 }
 
 
@@ -42,10 +42,74 @@ body {
   float: right;
   background-color: #74498c;
   color: white;
-  padding-left: 16px;
+  line-height: 1;
 }
+
+.topnav .icon {
+  display: none;
+  float: right;
+  padding: 14px 16px;
+  cursor: pointer;
+  background-color: #74498c;
+  color: white;
+  font-size: 12px;
+  text-decoration:  none;
+  text-align: center;
+  line-height: 1;
+}
+
+.dropdown {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background-color:#EDCDE6;
+  border: 6px double #d1add1;
+  z-index: 1001; 
+}
+
+.dropdown a {
+  display: block;
+  padding: 14px 16px;
+  font-size: 12px;
+  border-top: 1px  #d1add1;
+  border-bottom: 1px solid #d1add1;
+  color: #a76ea3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown a:hover {
+  background-color:#74498c;
+  color: white;
+}
+
 
 .container {
-    padding: 20px;
+  position: fixed;        
+  top: 62px;              
+  left: 50%;              
+  transform: translateX(-50%); 
+  width: 80%;            
+  max-width: 600px;
+  padding: 20px;
+  background: white;       
+  border: 2px solid #a76ea3;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;   
+  overflow: auto;
+  max-height: calc(100vh -80px);   
 }
 
+@media screen and (max-width: 427px) {
+  .topnav a:not(.split):not(.icon) {
+    display: none;
+  }
+  .topnav .icon {
+    display: block;
+  }
+  .topnav.responsive + .dropdown-content {
+    display: block;
+  }
+}
