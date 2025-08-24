@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'CustomFont';
-  src: url('fonts/custom.ttf') format('truetype');
+  src: url('fonts/custom.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
