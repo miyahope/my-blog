@@ -84,7 +84,7 @@ body {
   color: white;
 }
 
-.side-container {  
+.right-side-container {  
   position: fixed; 
   top: 70px;              
   left: 15px;              
@@ -96,6 +96,28 @@ body {
   overflow: auto;
   
 }
+
+.left-side-container {
+  position: fixed; 
+  display: inline-block;
+  top: 70px;
+  right: 15px;
+  width: 120px;
+  height: 85px;
+  padding: 20px;
+  background: white;       
+  border: 2px solid #a76ea3;
+  overflow: auto;
+}
+
+.left-side-container a {
+  text-decoration: none;
+  color: #533c8c;
+  font-weight: bold;              
+  display: block;
+  padding: 2px;
+}
+
 .title-container {
   background: #74498c;
   color: white;
