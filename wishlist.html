@@ -6,15 +6,48 @@
   <meta name="viewport" content="width=device-width">
   <title>girlmeetsworld</title>
   <link href="wishlist.css" rel="stylesheet" type="text/css" />
+  <script src = "script.js"></script>
 </head>
 
 
 <body>
-    <div class="topnav">
+    <script src="script.js"></script>
+
+    <div class="topnav" id = "myTopnav">
         <a class="active" href="index.html">home</a>
         <a class="#blog" href="blog.html">my blog</a>
         <a class="#leave-a-message" href="leave-a-message.html">leave a message!</a>
         <a class="#photos" href="photos.html">photos</a>
         <a class="split" href="index.html">girlmeetsworld</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </div>
+
+    <div class="dropdown" id = "dropdownMenu">
+        <a href="index.html">home</a>
+        <a href="blog.html">my blog</a>
+        <a href="leave-a-message.html">leave a message!</a>
+        <a href="photos.html">photos</a>
     </div>
-</body>
+
+     <div class="wishlist-container">
+    <div class="title-container">wishlist</div>
+    <ul class="wishlist">
+      <li>
+        <div class ="item"> Visit Japan during cherry blossom season</div>
+        <p>I want to see Kyoto in bloom with soft pink petals everywhere.</p>
+      </li>
+
+      <li>
+        <div class="item">Learn to play a full Laufey song on guitar 🎸 </div>
+        <p>gotta learn how to play guitar first...</p>
+      </li>
+
+      <li>
+        <div class="item">Collect all Studio Ghibli artbooks</div>
+        <p>They’re expensive, but so worth it. I bought the Howl's moving castle book and its the prettiest thing I own.</p>
+      </li>
+    </ul>
+  </div>
+
+  </body>
+</html>
