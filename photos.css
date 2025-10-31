@@ -88,12 +88,14 @@ body {
   color: white;
 }
 
-/* container */
+/* containers */
+
 .container {
   position: absolute;        
   top: 60px; 
   left: 26px;                    
-  width: 80%;          
+  width: 80%;    
+        
   max-width: 600px;
   padding: 20px;
   background: white;       
@@ -110,15 +112,14 @@ body {
   font-size: 22px;
 }
 
-/* gallery layout */
-.container img, 
-.container video {
+
+.container img  {
+  border: 2px solid #a76ea3;
+  border-radius: 10px;
   width: 100%;
   max-width: 250px;
   height: 250px;
   object-fit: cover;
-  border: 2px solid #a76ea3;
-  border-radius: 10px;
   margin: 10px;
 }
 

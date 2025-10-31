@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'CustomFont';
-  src: url('fonts/custom.otf') format('truetype');
+  src: url('fonts/custom.otf'); 
   font-weight: normal;
   font-style: normal;
 }
@@ -11,16 +11,21 @@ body {
   background-color: #ebdeef; 
   margin: 0;
   padding: 0;
-  border: fill;
-  height: 100%;
-  overflow: hidden; 
+  min-height: 100vh;        
+  overflow-x: hidden;     
+  overflow-y: auto;          
   position: relative;
+  padding-top: 70px;  
 }
 
 .topnav {
   color: #a76ea3;
   background-color: #EDCDE6;
-  width: auto;
+  width: 100%;
+  position: fixed;       
+  top: 0;
+  left: 0;
+  z-index: 3000;
 }
 
 .topnav a {
@@ -42,7 +47,6 @@ body {
   float: right;
   background-color: #74498c;
   color: white;
-  line-height: 1;
 }
 
 .topnav .icon {
@@ -55,7 +59,6 @@ body {
   font-size: 12px;
   text-decoration:  none;
   text-align: center;
-  line-height: 1;
 }
 
 .dropdown {
@@ -77,7 +80,6 @@ body {
   border-bottom: 1px solid #d1add1;
   color: #a76ea3;
   text-decoration: none;
-  font-size: 14px;
 }
 
 .dropdown a:hover {
@@ -85,22 +87,36 @@ body {
   color: white;
 }
 
-
-.container {
-  position: fixed;        
-    top: 62px;              
-  left: 50%;              
-  transform: translateX(-50%); 
-  width: 80%;            
+.message-container {
+  position: relative;        
+  top: 30px; 
+  left: 26px;                    
+  width: 80%;    
   max-width: 600px;
   padding: 20px;
   background: white;       
   border: 2px solid #a76ea3;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   z-index: 1000;   
-  overflow: auto;
-  max-height: calc(100vh -80px);   
+  overflow: visible;  
 }
+
+.title-container {
+  background: #74498c;
+  color: white;
+  font-weight: bold;
+  padding: 5px 8px;
+  font-size: 22px;
+}
+
+.iframe {
+  width: 100%;
+  height:75%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #c3b2cc;
+}
+
+
 
 @media screen and (max-width: 427px) {
   .topnav a:not(.split):not(.icon) {
@@ -113,3 +129,4 @@ body {
     display: block;
   }
 }
+
