@@ -5,6 +5,7 @@
   font-style: normal;
 }
 
+
 body {
   color: #a76ea3;
   background-color: #ebdeef; 
@@ -26,7 +27,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 3000; 
 }
 
 .topnav a {
@@ -47,7 +48,6 @@ body {
   float: right;
   background-color: #74498c;
   color: white;
-  
 }
 
 .topnav .icon {
@@ -60,7 +60,6 @@ body {
   font-size: 12px;
   text-decoration: none;
   text-align: center;
-  
 }
 
 /* dropdown */
@@ -72,7 +71,7 @@ body {
   right: 0;
   background-color: #EDCDE6;
   border: 6px double #d1add1;
-  z-index: 1000;
+  z-index: 2500; 
 }
 
 .dropdown a {
@@ -89,6 +88,7 @@ body {
   background-color:#74498c;
   color: white;
 }
+
 
 /* containers */
 .right-side-container {  
@@ -128,7 +128,7 @@ body {
   position: absolute; 
   top: 220px;
   left: 15px;
-  width: 382px;
+  width: 380px;
   height: 60px;
   padding: 20px;
   background: white;       
