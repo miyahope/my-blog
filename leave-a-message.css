@@ -89,7 +89,7 @@ body {
 
 .message-container {
   position: relative;        
-  top: 30px; 
+  top: 5px; 
   left: 26px;                    
   width: 80%;    
   max-width: 600px;
@@ -129,4 +129,3 @@ body {
     display: block;
   }
 }
-

@@ -5,16 +5,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>girlmeetsworld</title>
-  <link href="reading-list.css" rel="stylesheet" type="text/css" />
+  <link href="watch-list.css" rel="stylesheet" type="text/css" />
+  <script src = "script.js"></script>
 </head>
 
 
 <body>
-    <div class="topnav">
+    <script src="script.js"></script>
+
+    <div class="topnav" id = "myTopnav">
         <a class="active" href="index.html">home</a>
         <a class="#blog" href="blog.html">my blog</a>
         <a class="#leave-a-message" href="leave-a-message.html">leave a message!</a>
         <a class="#photos" href="photos.html">photos</a>
         <a class="split" href="index.html">girlmeetsworld</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </div>
+
+    <div class="dropdown" id = "dropdownMenu">
+        <a href="index.html">home</a>
+        <a href="blog.html">my blog</a>
+        <a href="leave-a-message.html">leave a message!</a>
+        <a href="photos.html">photos</a>
     </div>
+
+
+  <div class = "media-entry">
+    <div class = "title-container">reading list</div> 
+    <div class = "media-content">
+    <img class = "book" src="images/ponyo-poster.jpg">
+
+      <div class = "media-info">
+        <div class = "details">[Hayao Miyazaki, 2008]</div>
+        <div class = "rating">4.5/5.0</div>
+        <div class = "review">
+            <p>
+             A soft, dreamlike story about childhood curiosity. The sea, the sky, even the chaos, I loved it all. It’s warm, strange, and beautiful.
+            </p>
+          </div>
+      </div>
+    </div>
+</div>
+
 </body>
+</html>
