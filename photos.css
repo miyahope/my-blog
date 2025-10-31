@@ -83,6 +83,7 @@ body {
 .dropdown a:hover {
   background-color:#74498c;
   color: white;
+
 }
 
 
@@ -112,4 +113,10 @@ body {
   .topnav.responsive + .dropdown-content {
     display: block;
   }
+}
+
+img{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
 }
